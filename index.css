@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(12, 19, 128);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.planet{
+    background-color: rgb(247, 247, 28);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.one{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(138, 138, 36);
+    transform: translate(45px,-160px);
+}
+
+.two{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(138, 138, 36);
+    transform: translate(35px,-160px);
+}
+
+.three{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(138, 138, 36);
+    transform: translate(65px,-115px);
+}
+
+.moon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(256, 256, 256);
+    position: relative;
+    bottom: 130px;
+    left: -30px;
+    animation: move 3s infinite;
+    z-index: 1;
+    
+}
+
+@keyframes move{
+     49%{
+        z-index: 1;
+     }
+    50%{
+        z-index: -1;
+        left: 210px;
+        bottom: 270px;
+        
+    }
+
+    100%{
+        z-index: -1;
+    }
+}
